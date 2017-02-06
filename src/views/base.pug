@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='description', content= 'A nice starting configuration')
+    title= "Material Kit Starter"
+    script(src="https://use.fontawesome.com/df8ec2625f.js")
+    block stylesheets
+      link(rel="icon" href="img/favicon.png")
+      link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel='stylesheet' type='text/css')
+      link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel='stylesheet' type='text/css')
+      // build:css css/app.css
+      link(rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css")
+      link(rel="stylesheet" href="styles/material-kit.css")
+      link(rel="stylesheet" href="styles/demo.css")
+      link(rel="stylesheet" href="assets/css/main.css")
+      // endbuild
+  body.index-page
+    block content
+      
+    block scripts
+      // build:js js/app.js
+      script(src="vendors/jquery/js/jquery.js")
+      script(src="vendors/bootstrap/js/bootstrap.js")
+      script(src="scripts/material.min.js")
+      script(src="scripts/nouislider.min.js")
+      script(src="scripts/bootstrap-datepicker.js")
+      script(src="scripts/material-kit.js")
+      script(src="assets/js/main.js")
+      // endbuild
+
+    block javascript
